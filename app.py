@@ -1,7 +1,11 @@
+import os
 import datetime
 from pydoc import render_doc
 from flask import Flask, render_template, request
 from pymongo import MongoClient
+from dotenv import load_dotev
+
+load_dotev()
 
 def create_app():
     app = Flask(__name__)
